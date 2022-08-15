@@ -1,0 +1,161 @@
+/* GENERAL SETTINGS */
+
+body {
+    margin: 0;
+    line-height: 1.6;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+/* LOADER */
+
+.container_loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    font-size: 100px;
+    color: #000;
+    font-weight: 700;
+  }
+  .loader:after {
+    content: '';
+    height: 10px;
+    width:0%;
+    display: block;
+    background: #FF3D00;
+    animation: 5s lineGrow linear infinite;
+  }
+  
+  @keyframes lineGrow {to{width: 100%;}}
+
+
+/* RENDER LIST MOVIES */
+
+.render_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;   
+}
+
+.list_img {
+    display: block;
+    margin: 0 auto; 
+    box-shadow: 6px 6px 10px #000;
+    border-radius: 5%;
+    background: linear-gradient(to left, 
+    #d0c3c1);
+    transition: opacity .1s linear;
+    cursor: pointer;
+}
+
+
+/* POPULARITY RATE */
+
+.container_popularity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin-bottom: 15px;
+}
+
+.popularity {
+    margin: 0 auto;
+}
+
+
+/* PAGINATION */
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+/* THEME BUTTON */
+
+.theme_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* POP UP */
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.popup_inner {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    bottom: 25%;
+    background: white;
+}
+
+.popup_close-btn {
+    font-size: 45px;
+    font-weight: 700;
+    transform: rotate(45deg);
+    float: right;
+    border: 0;
+    background: hsl(216, 100, 50);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all 150ms;
+}
+
+.popup_close-btn:hover,
+.popup_close-btn:focus {
+  transform: rotateZ(135deg);
+  background: hsl(216, 100, 40);
+}
+
+.popup_title {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 130px;
+    width: 400px;
+    background: black;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+

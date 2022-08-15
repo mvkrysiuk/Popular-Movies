@@ -1,0 +1,110 @@
+/* MAIN TITLE */
+
+.header_title-dark {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+/* MAIN CONTAINER */
+
+.container-dark {
+    max-width: 1400px;
+    border: 3px solid #fff;
+    margin: 0 auto;
+}
+
+
+/* RENDER LIST MOVIES */
+
+.list-dark {
+    list-style-type: none;
+    max-width: 400px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    margin: 10px 10px;
+}
+
+
+.title_list-dark {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.list_overview-dark {
+    margin: 20px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: justify;
+}
+
+
+/* POPULARITY RATE */
+
+.popularity_text-dark {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.popularity_rate-dark {
+    font-size: 16px;
+    color: #fff;
+}
+
+.button_rate-dark {
+    margin: 0 auto;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background: #333;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+
+/* PAGINATION */
+
+.pagination_btn-dark {
+    margin: 0 20px;
+    width: 150px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+.pagination_btn-dark:disabled {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+
+/* THEME BUTTON */
+
+.select_theme-text-dark {
+    color: #fff;
+    padding-right: 10px;
+}
+
+.select_theme-btn-dark {
+    width: 80px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+}
